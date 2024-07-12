@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang ="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content ="IE-edge">
+<meta name="viewport" content="width-device-width, initial-scale=1.0">
+<title>Social Networking Website</title>
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+<nav class="navbar">
+     <div class="navbar-left">
+        <a href="index.html" class="logo"><img src="images/logo.png"></a>
+        <div class="search-box">
+            <img src="images/search.png">
+            <input type="text" placeholder="search">
+        </div>     
+    </div>
+    <div class="navbar-center">
+     <ul>
+        <li><a href="index.html" class="active-link"><img src="images/home.png"><span>Home</span></a></li>
+        <li><a href="#"><img src="images/network.png"><span>My Network</span></a></li>
+        <li><a href="#"><img src="images/jobs.png"><span>Jobs</span></a></li>  
+        <li><a href="#"><img src="images/message.png"><span>Messaging</span></a></li> 
+        <li><a href="#"><img src="images/notification.png"><span>Notifications</span></a></li> 
+    </ul>
+    </div>
+
+    <div class="navbar-right">
+        <div class="online">
+            <img src="images/user1.jpg" class="nav-profile-img" onclick="toggleMenu()">
+        </div> 
+    </div>   
+   <!----------------------PROFILE DROP DOWN-----------------------> 
+   <div class="profile-menu-wrap" id="profileMenu">
+    <div class="prof-menu">
+        <div class="user-info">
+            <img src="images/user1.jpg">
+            <div>
+                <h3>Adline Christina N</h3>
+                <a href="profile.html">See Your Profile</a>
+            </div>
+        </div>
+        <hr>
+        <a href="#" class="prof-menu-link">
+            <img src="images/feedback.png">
+            <p>Give feedback</p>
+            <span>></span>
+        </a>
+        <a href="#" class="prof-menu-link">
+            <img src="images/setting.png">
+            <p>Settings and Privacy</p>
+            <span>></span>
+        </a>
+        <a href="#" class="prof-menu-link">
+            <img src="images/help.png">
+            <p>Help and Support</p>
+            <span>></span>
+        </a>
+        <a href="#" class="prof-menu-link">
+            <img src="images/display.png">
+            <p>Display & Accessibility</p>
+            <span>></span>
+        </a>
+        <a href="#" class="prof-menu-link">
+            <img src="images/logout.png">
+            <p>logout</p>
+            <span>></span>
+        </a>
+    </div>
+   </div>
+</nav>  
+
+    <title>LinkedIn Job Search</title>
+
+    
+    <div class="job-list">
+        <h1>Available Jobs on LinkedIn</h1>
+    <p>Click the link below to view available jobs on LinkedIn:</p>
+        <a href="https://www.linkedin.com/jobs/">View Jobs on LinkedIn</a>
+    </div>
+
+    
+       
+        <div class="sb-useful-links">
+            <a href="#">About</a>
+            <a href="#">Accessibility</a>
+            <a href="#">Help Center</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Advertising</a>
+            <a href="#">Get the App</a>
+            <a href="#">More</a>
+         <div class="cprt-msg">
+            <img src="images/logo.png">
+            <p>Linkedup &#169; 2023. All Rights Reserved</p>
+
+        </div>
+
+        </div>
+    </div>
+
+    <script>
+        let profileMenu = document.getElementById("profileMenu");
+        function toggleMenu(){
+        profileMenu.classList.toggle("open-menu");
+        }
+    </script>
+</body>
+</html>

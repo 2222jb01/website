@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang ="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content ="IE-edge">
+<meta name="viewport" content="width-device-width, initial-scale=1.0">
+<title>Social Networking Website</title>
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+<nav class="navbar">
+     <div class="navbar-left">
+        <a href="index.html" class="logo"><img src="images/logo.png"></a>
+        <div class="search-box">
+            <img src="images/search.png">
+            <input type="text" placeholder="search">
+        </div>     
+    </div>
+    <div class="navbar-center">
+     <ul>
+        <li><a href="index.html" class="active-link"><img src="images/home.png"><span>Home</span></a></li>
+        <li><a href="#"><img src="images/network.png"><span>My Network</span></a></li>
+        <li><a href="job.html"><img src="images/jobs.png"><span>Jobs</span></a></li>  
+        <li><a href="#"><img src="images/message.png"><span>Messaging</span></a></li> 
+        <li><a href="#"><img src="images/notification.png"><span>Notifications</span></a></li> 
+    </ul>
+    </div>
+
+    <div class="navbar-right">
+        <div class="online">
+            <img src="images/user1.jpg" class="nav-profile-img" onclick="toggleMenu()">
+        </div> 
+    </div>   
+   <!----------------------PROFILE DROP DOWN-----------------------> 
+   <div class="profile-menu-wrap" id="profileMenu">
+    <div class="prof-menu">
+        <div class="user-info">
+            <img src="images/user1.jpg">
+            <div>
+                <h3>Adline Christina N</h3>
+                <a href="profile.html">See Your Profile</a>
+            </div>
+        </div>
+        <hr>
+        <a href="#" class="prof-menu-link">
+            <img src="images/feedback.png">
+            <p>Give feedback</p>
+            <span>></span>
+        </a>
+        <a href="#" class="prof-menu-link">
+            <img src="images/setting.png">
+            <p>Settings and Privacy</p>
+            <span>></span>
+        </a>
+        <a href="#" class="prof-menu-link">
+            <img src="images/help.png">
+            <p>Help and Support</p>
+            <span>></span>
+        </a>
+        <a href="#" class="prof-menu-link">
+            <img src="images/display.png">
+            <p>Display & Accessibility</p>
+            <span>></span>
+        </a>
+        <a href="#" class="prof-menu-link">
+            <img src="images/logout.png">
+            <p>logout</p>
+            <span>></span>
+        </a>
+    </div>
+   </div>
+</nav>  
+<!-- -----------navbar close------- -->  
+<div class="container">
+    <div class="profile-main">
+        <div class="prof-container">
+            <img src="images/cover-pic.png" width="100%">
+            <div class="prof-container-inner">
+                <img src="images/user1.jpg" class="prof-pict">
+                <h1>Adline Christina N</h1>
+                <b>Intern at KGISL</b>
+                <p>Tamil Nadu ,India &middot; <a href="#">Contact info</a></p>
+                <div class="mutual-connection">
+                    <img src="./images/user-4.png">
+                    <span>1 mutual connection: Carol Fredina</span>
+                </div>
+                <div class="prof-btn">
+                    <a href="#"class="prim-btn"><img src="images/connect.png">Connect</a>
+                    <a href="#"><img src="images/chat.png">Message</a>
+                </div>
+            </div>
+        </div>
+        <div class="prof-desc">
+            <h2>About</h2>
+            <p>The success of every website depends on search engine optimization and Digital Marketing strategies.
+            If you are on the first page of all major search engines,then you are already ahead of your competitors.</p>
+            <a href="#" class="see-more-link">See more...</a>
+        </div>
+        <div class="prof-desc">
+            <h2>Experience</h2>
+            <div class="prof-desc-row">
+                <img src="images/kgisl.jpg">
+                <div>
+                    <h3>Intern</h3>
+                    <b>KGISL &middot; Full-Time</b>
+                    <b>May 2023 - Present  &middot; 6 months</b>
+                    <p>Computer Programming is the process of performing a particular computation,usually by designing and building an executable computer program.</p>
+                    <hr>
+                </div>
+            </div>
+            
+            <hr>
+            <a href="#" class="exp-link">Show all 7 experiences <img src="images/right-arrow.png"></a>
+        </div>
+       <div class="prof-desc">
+        <h2>Education</h2>
+        <div class="prof-desc-row">
+            <img src="images/kg.jpg">
+            <div>
+                <h3>KG College Of Arts And Science</h3>
+                <b>Bachelor Of Computer Applications</b>
+                <b>2020-2023</b>
+                <hr>
+            </div>
+        </div>
+
+    </div> 
+    <div class="prof-desc">
+        <h2>Skills</h2>
+        <a href="#" class="skills-btn">Leadership</a>
+        <a href="#" class="skills-btn">Web Design</a>
+        <a href="#" class="skills-btn">Development</a>
+        <a href="#" class="skills-btn">Comunication</a>
+        <a href="#" class="skills-btn">UI/UX</a>
+        <a href="#" class="skills-btn">Planning</a>
+        <a href="#" class="skills-btn">Coding</a>
+        <a href="#" class="skills-btn">Javascript</a>
+        <a href="#" class="skills-btn">Python</a>
+        <a href="#" class="skills-btn">Entreprenuership</a>
+    </div>
+    <div class="prof-desc">
+        <h2>Language</h2>
+        <a href="#" class="lang-btn">English</a>
+        <a href="#" class="lang-btn">German</a>
+        <a href="#" class="lang-btn">Tamil</a>
+    </div>
+
+
+    </div>
+ <!---------------------------PROFILE SIDEBAR------------------->   
+    <div class="profile-sidebar">
+
+        <div class="sidebar-ad">
+            <small>Ad &middot; &middot; &middot;</small>
+            <p>Master the principles of Web Designing</p>
+            <div>
+                <img src="images/user1.jpg">
+                <img src="images/mi-logo.png">
+            </div>
+            <b>Brand and Demand in Xiaomi</b>
+            <a href="#" class="ad-link">Learn More</a>    
+        </div>
+
+        <div class="sidebar-ppl">
+            <h3>People you may know</h3>
+            <div class="sidebar-ppl-row">
+                <img src="./images/user-3.png">
+                <div>
+                    <h2>Ellen joe</h2>
+                    <p>Data Analyst at Google</p>
+                    <a href="#">Connect</a>
+                </div>
+            </div>
+            <div class="sidebar-ppl-row">
+                <img src="./images/user-5.png">
+                <div>
+                    <h2>Joseph Smith</h2>
+                    <p>Harvard Graduate</p>
+                    <a href="#">Connect</a>
+                </div>
+            </div>
+            <div class="sidebar-ppl-row">
+                <img src="images/user-2.png">
+                <div>
+                    <h2>Josh Bradley</h2>
+                    <p>Accounting Manager in ISO company</p>
+                    <a href="#">Connect</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<div class="profile-ftr">
+    <div class="sidebar-useful-links">
+        <a href="#">About</a>
+        <a href="#">Accessibility</a>
+        <a href="#">Help Center</a>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Advertising</a>
+        <a href="#">Get the App</a>
+        <a href="#">More</a>
+     <div class="cpyrt-msg">
+        <img src="images/logo.png">
+        <p>Linkedup &#169; 2023. All Rights Reserved</p>
+
+    </div>
+
+</div>
+
+
+<script>
+    let profileMenu = document.getElementById("profileMenu");
+    function toggleMenu(){
+    profileMenu.classList.toggle("open-menu");
+    }
+    </script>
+</body>    
+</html>
